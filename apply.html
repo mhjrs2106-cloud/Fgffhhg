@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#080808"><title>تقديم الإدارة | 𝐒𝐎𝐔𝐓𝐇 𝐋𝐈𝐅𝐄 𝐑𝐏</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+<header class="topbar"><a class="brand" href="index.html"><img src="assets/logo.png" alt="شعار South Life RP"><span>𝐒𝐎𝐔𝐓𝐇 <b>𝐋𝐈𝐅𝐄</b> 𝐑𝐏</span></a><button class="menu-toggle" aria-label="فتح القائمة" onclick="document.querySelector('.navlinks').classList.toggle('open')">☰</button><nav class="navlinks"><a href="index.html">الرئيسية</a><a class="active" href="apply.html">تقديم الإدارة</a><a href="rules.html">القوانين</a><a class="discord-link" href="https://discord.gg/QUrHxS59Yv" target="_blank" rel="noopener">دخول الديسكورد ↗</a></nav></header>
+<main class="subpage"><div class="page-heading"><div class="section-label">STAFF APPLICATION</div><h1>تقديم <span>الإدارة</span></h1><p>للتقديم على إدارة ساوث لايف، عبّئ البيانات التالية بعد مراجعة القوانين.</p></div>
+<div class="notice"><span>!</span><div><strong>قبل ما تبدأ</strong><p>اقرأ <a href="rules.html">قوانين الإدارة</a> جيداً. هذا النموذج لا يرسل البيانات تلقائياً إلى Discord؛ بعد تجهيز الطلب انسخه وأرسله في قناة التقديم المعتمدة.</p></div></div>
+<form id="application-form" class="application-form">
+<div class="form-grid">
+<label>1 — الاسم<input name="name" required placeholder="اكتب اسمك"></label>
+<label>2 — عمرك<input name="age" required type="number" min="13" max="99" placeholder="اكتب عمرك"></label>
+<label class="wide">3 — خبراتك<textarea name="experience" required rows="3" placeholder="اكتب خبراتك السابقة في الإدارة"></textarea></label>
+<label>4 — كم عدد ساعات تفاعلك؟<input name="hours" required placeholder="مثلاً: 4 ساعات يومياً"></label>
+<label>5 — من أي دولة؟<input name="country" required placeholder="اكتب دولتك"></label>
+<label>6 — هل قرأت القوانين؟<select name="readRules" required><option value="">اختر إجابة</option><option>نعم، قرأتها كاملة</option><option>لا، لم أقرأها بعد</option></select></label>
+<label>7 — هل كنت إداريًا في سيرفر آخر؟<select name="adminBefore" required><option value="">اختر إجابة</option><option>نعم</option><option>لا</option></select></label>
+<label class="wide">8 — ما معنى الرول بلاي؟<textarea name="roleplay" required rows="3" placeholder="اشرح معنى الرول بلاي بأسلوبك"></textarea></label>
+</div>
+<label class="checkline"><input type="checkbox" name="confirm" required><span>أؤكد أن بياناتي صحيحة، وأوافق على الالتزام بقوانين الإدارة.</span></label>
+<div class="form-actions"><button class="btn btn-yellow" type="submit">تجهيز طلب التقديم</button><button class="btn btn-outline" type="reset">مسح البيانات</button></div>
+<div id="result" class="result" hidden><h3>طلبك جاهز للنسخ</h3><p>انسخ الطلب ثم افتح الديسكورد وأرسله في قناة التقديم الرسمية.</p><textarea id="formatted" rows="16" readonly></textarea><div class="form-actions"><button class="btn btn-yellow" type="button" id="copy-btn">نسخ الطلب</button><a class="btn btn-outline" href="https://discord.gg/QUrHxS59Yv" target="_blank" rel="noopener">فتح الديسكورد ↗</a></div><p id="copy-status" class="copy-status" aria-live="polite"></p></div>
+</form>
+</main><footer><a class="brand footer-brand" href="index.html"><img src="assets/logo.png" alt=""><span>𝐒𝐎𝐔𝐓𝐇 𝐋𝐈𝐅𝐄 𝐑𝐏</span></a><p>© South Life RP — جميع الحقوق محفوظة</p><a href="rules.html">اقرأ القوانين</a></footer><script src="script.js"></script></body></html>
